@@ -1,4 +1,3 @@
-
 var email;
 var name;
 var number;

@@ -1,3 +1,3 @@
-# edobbi.co
+# edobbi.co 
 
-THis is my web portfolio
+This is my web portfolio
