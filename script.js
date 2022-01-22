@@ -1,30 +1,21 @@
-var email;
-var name;
-var number;
+const form = document.querySelector('.sub');
 
-const submitBut = document.getElementById("subBut");
+const contact = (n,e,p)=>{
+let name = n;
+let mail = e;
+let phone = p;
 
-// submitBut.addEventListener("click", submit());
 
-submitBut.onclick = submit();
-
-function submit(){
-   let email = document.forms["sub"]["email_address"].value;
-   let name = document.forms["sub"]["name"].value;
-   let number = document.forms["sub"]["phone_number"].value;
-      if(name =="" || email == ""){
-         if(name==""){
-            alert("Name must be filled out");
-         }
-         else if( email = ""){
-            alert("Email must be filled out");
-         }
-
-         else if(name==""&&email==""){
-            alert("Name and email must be filled out");
-         }
-         
-         return false;
-
-      }
 }
+
+form.addEventListener('submit', e =>{
+   e.preventDefault();
+
+   const nam = form.name.value;
+   const nu = form.phone.value;
+   const em = form.email.value;
+
+   const cont = contact(nam, em, nu);
+   
+   console.log('DONE');
+});
