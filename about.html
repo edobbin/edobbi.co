@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width =device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/aboutMe.css">
+        <script src="js/sidebar.js" defer></script>
         <title>DEV DOBBIN</title>
     </head>
         <header>
@@ -10,21 +13,39 @@
                 
                 <ul>
                     <li class = "name"><a href="index.html">DEV DOBBIN</a></li>
-                    <li style="float: right"><a href="contact.html">Contact</a></li>
-                    <li style="float: right"><a href="#">Projects</a></li>
+                    <!--<li style="float: right"><a href="contact.html">Contact</a></li>-->
+                    <li style="float: right"><a href="project.html">Projects</a></li>
                     <li style="float: right"><a href="about.html">About</a></li>
                 </ul>
             </nav>
+
+            <div id="hamburger" onclick="toggleMobile(this)">
+                
+                <div class="bar1"></div> 
+                <div class="bar2"></div> 
+                <div class="bar3"></div>                
+                <ul class="mobile">
+                    <li class = "name"><a href="index.html">DEV DOBBIN</a></li>
+                    <li style="float: right"><a href="about.html">About</a></li>
+                    
+                    <li style="float: right"><a href="project.html">Projects</a></li>
+                    <li style="float: right"><a href="mailto: dobbincode@gmail.com">Contact</a></li>
+                    <li style="float: right"><a href="https://github.com/edobbin">Github</a></li>
+                    <li style="float: right"><a href="https://www.linkedin.com/in/ethan-d-28a868197/">Linkedin</a></li>
+                </ul>
+            </div>
         </header>
             <body>
                 <div class="titl">
+                    <div class = "specFont">
                 <h1>About Me</h1>
+                    </div>
                 </div>
                 <section>
-                <div>
-                    <h4>Ethan Dobbin</h4>
-                <p>I am an 18 year old college student from Maryland. I am currently attending a first year student at 
-                    Towson University studying Computer Science. I have been coding for since late 2017. My goal is to improve my skills as a programmer and become a software engineer.
+                <div class = "container">
+                    <p class = "myName">My name is Ethan Dobbin</p>
+                <p class = "aboutMe">I am an 18 year old college student from Maryland. I am currently attending a first year student at 
+                    Towson&nbsp;University&nbsp;studying Computer Science. I have been coding for since late 2017. I began coding during my freshman year of high school, there I was orignally exposed to HTML, CSS and Javascript. After completeing that course I spent the following three year learning and working with Java. My goal is to improve my skills as a programmer and become a software engineer.
                     In my freetime I also like to go fishing as well as workout.
                 </p>
                 </div>

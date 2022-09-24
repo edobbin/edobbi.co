@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html> 
     <head>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href ="home.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href ="css/home.css">
+        <script src="js/sidebar.js" defer></script>
         <title>DEV Dobbin</title>
     </head>
         <header>
@@ -12,19 +14,35 @@
                 
                 <ul>
                     <li class = "name"><a href="index.html">DEV DOBBIN</a></li>
-                    <li style="float: right"><a href="contact.html">Contact</a></li>
-                    <li style="float: right"><a href="#">Projects</a></li>
+                    <!--<li style="float: right"><a href="contact.html">Contact</a></li>-->
+                    <li style="float: right"><a href="project.html">Projects</a></li>
                     <li style="float: right"><a href="about.html">About</a></li>
                     
                     
                 </ul>
             </nav>
+
+            <div id="hamburger" onclick="toggleMobile(this)">
+                
+                <div class="bar1"></div> 
+                <div class="bar2"></div> 
+                <div class="bar3"></div>                
+                <ul class="mobile">
+                    <li class = "name"><a href="index.html">DEV DOBBIN</a></li>
+                    <li style="float: right"><a href="about.html">About</a></li>
+                    
+                    <li style="float: right"><a href="project.html">Projects</a></li>
+                    <li style="float: right"><a href="mailto: dobbincode@gmail.com">Contact</a></li>
+                    <li style="float: right"><a href="https://github.com/edobbin">Github</a></li>
+                    <li style="float: right"><a href="https://www.linkedin.com/in/ethan-d-28a868197/">Linkedin</a></li>
+                </ul>
+            </div>
         </header>
         <body>
             <div class="head-title"><h1>DEVELOPER DOBBIN</h1></div>
             <div>
                 <div class="pic-text">
-                    <div><img src="IMG_0881.jpg" alt="COH picture"
+                    <div><img src="images/IMG_0881.jpg" alt="COH picture"
                         width="200"
                         height="auto"></div>  
             
@@ -35,12 +53,28 @@
 
             <div class = "skill">
                 <section>
-                    <div><h3>Skills</h3></div>
+                    <div class = "skill-hed"><h3>Skills</h3></div>
                     <ul>
-                        <li>Java</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
+                        <li>
+                            
+                            <div class = "progress">
+                            <div class="innerbar" style="width:80%; background-color: aqua;" > <div class = "progress-text">Java</div></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class = "progress">
+                                <div class="innerbar" style="width:60%; background-color: rgb(255, 98, 98);"><div class = "progress-text">HTML</div></div>
+                                </div>
+                            </li>
+                        <li>
+                            <div class = "progress">
+                                <div class="innerbar" style="width:50%; background-color: rgb(240, 252, 72);"> <div class = "progress-text">CSS</div></div>
+                                </div>
+                            </li>
+                        <li><div class = "progress">
+                            <div class="innerbar" style="width:24%; background-color: rgb(102, 252, 72);"> <div class = "progress-text">JavaScript</div></div>
+                            </div>
+                        </li>
                     </ul>
                 </section>
             </div>
