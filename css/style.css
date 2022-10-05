@@ -1,0 +1,156 @@
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(58, 58, 58, .8);
+  }
+
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(58, 58, 58, .8);
+  }
+  
+  header  li {
+    float: left;
+  }
+  
+  header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+  }
+
+  footer  li {
+    float: left;
+    display: inline block;
+    padding-right: 20px;
+  }
+  
+  footer li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .name{
+      letter-spacing: 5px;
+  }
+  /* Change the link color to #111 (black) on hover */
+  header  li a:hover {
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+  }
+
+  header{
+      font-size: 25px;
+      
+  }
+
+  footer  li a:hover {
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+  }
+
+  footer{
+
+    
+    font-size: 20px;
+    background-color: rgb(58, 58, 58, .8);
+    
+    bottom: 0;
+    
+      
+      position: fixed;
+      width: 100%;
+  }
+
+  body{
+    background-color: rgb(255, 254, 254);
+    margin: 0px;
+    padding: 0px;
+    
+    
+  }
+
+  .titl{
+      text-align: center;
+      font-size: 25px;
+      margin: 1px;
+  }
+  #hamburger{
+    background-color: rgb(92, 92, 92);
+
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    right: 200px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    right:0;
+    left: 0;
+    z-index: 1030;
+    
+  }
+
+
+  #hamburger div{
+    position: relative;
+    
+    border-radius: 5px;
+    margin: 6px 0;
+    width: 35px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    
+    
+  }
+
+  .mobile{
+    display: none;
+    
+    position: -webkit-sticky;
+    position: fixed;
+    top: 63px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+  }
+
+  .open .mobile{
+    display: flex;
+    position: -webkit-sticky;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  @media only screen and (max-width: 600px){
+
+  header nav{
+    display: none;
+  }
+
+  footer{
+    display: none;
+  }
+
+  #hamburger{
+    display: block;
+  }
+
+  }

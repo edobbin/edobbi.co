@@ -1,0 +1,66 @@
+.container{
+    cursor: default;
+   
+}
+.container p{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.container b{
+    font-size: larger;
+}
+
+.specFont{
+    font-family: Verdana;
+    
+}
+.myName{
+    text-align: center;
+    font-size: 100px;
+}
+.aboutMe{
+    display: flex;
+   /* margin-left: 100px;
+    margin-right: 100px;  */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1000px){
+
+    .aboutMe{
+        display: flex;
+        margin-left: 100px;
+        margin-right: 100px;  
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 700px){
+
+    .aboutMe{
+        display: flex;
+        margin-left: 50px;
+        margin-right: 50px;  
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 400px){
+
+    .aboutMe{
+        display: flex;
+        margin-left: 20px;
+        margin-right: 20px;  
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}

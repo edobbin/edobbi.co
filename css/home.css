@@ -1,0 +1,96 @@
+img{
+    border-radius: 10px;
+    width: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto ;
+    
+}
+.main-space{
+
+}
+
+.pic-text{
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text{
+    padding-left: 30px;
+    align-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-right: 30px;
+    max-width: 1000px;
+
+}
+
+.head-title{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+.skill-hed{
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+}
+
+.skill ul{
+   list-style-type: none; 
+   
+   
+}
+.skill  li{
+    padding-right: 30px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    padding-top: 10px;
+    position: relative;
+    
+}
+
+.progress-text{
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding-top: 4px;
+}
+
+@keyframes progressBar{
+    0%{width:  0;}
+    
+}
+
+.progress{
+    position: relative;
+    
+    display: block;
+    background-color:rgba(206, 206, 206, 0.418);
+    height: 25px;
+    
+    border-radius: 15px;
+    width: 90%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.innerbar{
+    display: block;
+    animation: progressBar 2s ease-in-out;
+    animation-fill-mode: both;    
+    position: relative;
+    
+    border-radius: 7.5px;
+    height: 25px;
+
+}
